@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn DOM</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+
+    <p id="message">Hello</p>
+    <button id="btn">Change Text</button>
+
+    <script>
+        const ul = document.getElementById("list")
+        const newLi = document.createElement("li")
+        const message = document.getElementById("message")
+        const btn = document.getElementById("btn")
+
+        newLi.textContent = "Orange"
+        ul.appendChild(newLi)
+
+        btn.addEventListener("click",()=>{
+            message.textContent = 'Welcome to REACT'
+        })
+
+        const greet = (name)=>{
+            return `Hello ${name}`
+        }
+
+        const sqaure = (num) => num*num
+
+
+</script>
+</body>
+</html>
